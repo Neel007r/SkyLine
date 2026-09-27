@@ -1,0 +1,15 @@
+services:
+
+  backend:
+    build:
+      context: ./backend
+    image: skyline-backend:local
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build:
+      context: ./frontend
+    image: skyline-frontend:local
+    ports:
+      - "3000:80"
